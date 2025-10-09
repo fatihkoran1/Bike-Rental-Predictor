@@ -1,0 +1,104 @@
+{
+  "instant": {
+    "meaning": "Record index or unique identifier for each observation",
+    "dtype": "int64",
+    "example": 1,
+    "allowed_values_or_range": "1–17379"
+  },
+  "dteday": {
+    "meaning": "Date of the record (YYYY-MM-DD)",
+    "dtype": "object",
+    "example": "2011-01-01",
+    "allowed_values_or_range": "2011-01-01 to 2012-12-31"
+  },
+  "season": {
+    "meaning": "Season of the year (1=spring, 2=summer, 3=fall, 4=winter)",
+    "dtype": "int64",
+    "example": 1,
+    "allowed_values_or_range": "1–4"
+  },
+  "yr": {
+    "meaning": "Year indicator (0=2011, 1=2012)",
+    "dtype": "int64",
+    "example": 0,
+    "allowed_values_or_range": "0–1"
+  },
+  "mnth": {
+    "meaning": "Month of the year (1–12)",
+    "dtype": "int64",
+    "example": 1,
+    "allowed_values_or_range": "1–12"
+  },
+  "hr": {
+    "meaning": "Hour of the day (0–23)",
+    "dtype": "int64",
+    "example": 0,
+    "allowed_values_or_range": "0–23"
+  },
+  "holiday": {
+    "meaning": "Whether the day is a holiday (1=yes, 0=no)",
+    "dtype": "int64",
+    "example": 0,
+    "allowed_values_or_range": "0–1"
+  },
+  "weekday": {
+    "meaning": "Day of the week (0=Sunday, 1=Monday, ..., 6=Saturday)",
+    "dtype": "int64",
+    "example": 6,
+    "allowed_values_or_range": "0–6"
+  },
+  "workingday": {
+    "meaning": "Whether the day is a regular working day (1=yes, 0=no)",
+    "dtype": "int64",
+    "example": 0,
+    "allowed_values_or_range": "0–1"
+  },
+  "weathersit": {
+    "meaning": "Weather situation (1=clear, 2=mist/cloudy, 3=light rain/snow, 4=heavy rain/snow)",
+    "dtype": "int64",
+    "example": 1,
+    "allowed_values_or_range": "1–4"
+  },
+  "temp": {
+    "meaning": "Normalized temperature in Celsius (values between 0 and 1)",
+    "dtype": "float64",
+    "example": 0.24,
+    "allowed_values_or_range": "0–1 (actual temp ≈ temp × 41°C)"
+  },
+  "atemp": {
+    "meaning": "Normalized apparent temperature in Celsius (feels-like temperature)",
+    "dtype": "float64",
+    "example": 0.2879,
+    "allowed_values_or_range": "0–1 (actual atemp ≈ atemp × 50°C)"
+  },
+  "hum": {
+    "meaning": "Normalized humidity level (0–1 scale)",
+    "dtype": "float64",
+    "example": 0.81,
+    "allowed_values_or_range": "0–1 (actual humidity in % = hum × 100)"
+  },
+  "windspeed": {
+    "meaning": "Normalized wind speed (0–1 scale)",
+    "dtype": "float64",
+    "example": 0.0,
+    "allowed_values_or_range": "0–1 (actual wind speed ≈ windspeed × 67 km/h)"
+  },
+  "casual": {
+    "meaning": "Count of casual (non-registered) users in that hour",
+    "dtype": "int64",
+    "example": 3,
+    "allowed_values_or_range": "0–367"
+  },
+  "registered": {
+    "meaning": "Count of registered users in that hour",
+    "dtype": "int64",
+    "example": 13,
+    "allowed_values_or_range": "0–886"
+  },
+  "cnt": {
+    "meaning": "Total number of rentals (casual + registered) in that hour",
+    "dtype": "int64",
+    "example": 16,
+    "allowed_values_or_range": "0–977"
+  }
+}
